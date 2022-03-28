@@ -6,7 +6,7 @@ import { TiContacts } from "react-icons/ti";
 
 const Nav = () => {
   return (
-    <Nav>
+    <nav>
       <a href="#home">
         <AiOutlineHome />
       </a>
@@ -22,7 +22,7 @@ const Nav = () => {
       <a href="#contact">
         <TiContacts />
       </a>
-    </Nav>
+    </nav>
   );
 };
 
