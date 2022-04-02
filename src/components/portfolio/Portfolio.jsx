@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.scss";
-import data from "./data/portfolio-data.json";
+import data from "./data/portfolio-data.js";
 
 const Portfolio = () => {
   return (
