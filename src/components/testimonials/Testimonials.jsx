@@ -1,26 +1,40 @@
 import React from "react";
 import "./testimonials.scss";
-import Avatar from "../../assets/testimonials-avatar.jpg";
+import testimonialsData from "./data/testimonials";
+
+import { Pagination, Navigation } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/scss";
+import "swiper/scss/pagination";
+import "swiper/scss/navigation";
 
 const Testimonials = () => {
   return (
     <section id="testimonials">
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
-      <div className="container testimonials__container">
-        <article className="testimonial">
-          <div className="client__avatar">
-            <img src={Avatar} alt="Avatar" />
-          </div>
-          <h5 className="client__name"> John Doe</h5>
-          <small className="client__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab
-            laborum optio, vel in totam nihil nulla minima enim ratione dolorum
-            ex exercitationem quo? Perferendis voluptates doloribus dolor vel
-            reprehenderit!
-          </small>
-        </article>
-      </div>
+
+      <Swiper
+        className="container testimonials__container"
+        modules={[Pagination, Navigation]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
+        {testimonialsData.map(({ avatar, name, review }, index) => {
+          return (
+            <SwiperSlide key={index} className="testimonial">
+              <div className="client__avatar">
+                <img src={avatar} alt="Avatar" />
+              </div>
+              <h5 className="client__name"> {name}</h5>
+              <small className="client__review">{review} </small>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </section>
   );
 };
