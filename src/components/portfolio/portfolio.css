@@ -1,6 +1,8 @@
 .portfolio__container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
@@ -9,6 +11,7 @@
   padding: 1.3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -27,25 +30,26 @@
 }
 
 .portfolio__item-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-// MEDIA QUERIES - MEDIUM DEVICES
-
 @media screen and (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
 }
 
-// MEDIA QUERIES - SMALL DEVICES
-
 @media screen and (max-width: 600px) {
   .portfolio__container {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 1rem;
   }
 }
+/*# sourceMappingURL=portfolio.css.map */
