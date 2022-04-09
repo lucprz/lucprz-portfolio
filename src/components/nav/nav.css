@@ -9,7 +9,7 @@ nav {
   position: fixed;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,7 +17,7 @@ nav {
   gap: 0.8rem;
   border-radius: 3rem;
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 nav a {
@@ -36,7 +36,7 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-g);
 }
 /*# sourceMappingURL=nav.css.map */
