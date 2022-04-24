@@ -1,4 +1,4 @@
-import IMG1 from "../../../assets/testimonials-avatar.jpg";
+import IMG1 from "../../../assets/work4.jpg";
 
 const data = [
   {

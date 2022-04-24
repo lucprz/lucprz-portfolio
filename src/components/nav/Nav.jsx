@@ -3,6 +3,7 @@ import "./nav.scss";
 import { AiOutlineHome, AiOutlineUser, AiOutlineBook } from "react-icons/ai";
 import { RiServiceLine } from "react-icons/ri";
 import { TiContacts } from "react-icons/ti";
+import { BsMoonStars } from "react-icons/bs";
 
 import { useState } from "react";
 
@@ -44,6 +45,9 @@ const Nav = () => {
         className={activeNav === "#contact" ? "active" : ""}
       >
         <TiContacts />
+      </a>
+      <a href="#" className="theme__logo" id="theme-button">
+        <BsMoonStars />
       </a>
     </nav>
   );

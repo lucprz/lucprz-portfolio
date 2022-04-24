@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-function HeaderSocials() {
+const HeaderSocials = () => {
   return (
     <div className="header__socials">
       <a href="https://linkedin.com" target="_blank">
@@ -17,6 +17,6 @@ function HeaderSocials() {
       </a>
     </div>
   );
-}
+};
 
 export default HeaderSocials;

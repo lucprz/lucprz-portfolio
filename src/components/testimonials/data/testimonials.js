@@ -1,4 +1,4 @@
-import AVATAR_1 from "../../../assets/testimonials-avatar.jpg";
+import AVATAR_1 from "../../../assets/testimonial2.png";
 
 const testimonialsData = [
   {

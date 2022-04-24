@@ -10,6 +10,15 @@ header {
   position: relative;
 }
 
+/* TRANSLATION NAV */
+
+.translation {
+  height: var(--header-height);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /* CTA buttons */
 
 .cta {
@@ -42,7 +51,7 @@ header {
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
-  height: 30rem;
+  // height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
   /* OR */

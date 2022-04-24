@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import ME from "../../assets/the-rock.png";
+import ME from "../../assets/about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { CgFolder } from "react-icons/cg";
